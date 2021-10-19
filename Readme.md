@@ -16,12 +16,15 @@ Registrar usando un formulario una lista de personas. Indicar cúal es su genera
 
 ## Ejercicio 3
 Mostrar la fecha y hora actual en una página web.
+------------ | -------------
 ![image info](./src/ima5.png)
 
 ## Ejercicio 4
 Programar un cronómetro con botones para Iniciar, Pausar, Resetear.
+------------ | -------------
 ![image info](./src/ima6.png)
 
-## Ejercicio 4
+## Ejercicio 5
 Programar un temporizados que ingrese el usuario el tiempo desde el cúal irá a decrementar, con botones para Iniciar, Pausar, Resetear.
+------------ | -------------
 ![image info](./src/ima7.png)
