@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="RAFIJ">
+  <meta name="description" content="Ejercicios DOM / BOM JS">
+  <meta name="keywords" content="objetos, clases, DOM, BOM, javascript">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Generaciones - DOM/BOM</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Ejercicio 2</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/registrar.html" target="_blank">Registrar</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+    <h1 class="display-6 my-4 text-center">Registro de personas</h1>
+    <hr>
+    <section class="my-2 bg-light p-3">
+      <form id="formPersonas">
+        <h2 class="lead">Ingreso de datos</h2>
+        <hr>
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Juan Perez">
+          <div class="invalid-feedback">Este campo es obligatorio</div>
+        </div>
+
+        <div>
+          <label for="sexo" class="form-label">Sexo</label>
+        </div>
+          <div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="sexo" value="0" checked>
+              <label class="form-check-label" for="hombre">H - hombre</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="sexo" value="1">
+              <label class="form-check-label" for="mujer">
+                M - mujer
+              </label>
+            </div>
+
+            <div class="mb-3">
+              <label for="peso" class="form-label">Peso (kg.)</label>
+              <input type="text" class="form-control" id="peso" placeholder="71">
+              <div class="invalid-feedback">Este campo es obligatorio</div>
+            </div>
+            <div class="mb-3">
+              <label for="altura" class="form-label">Altura (cm.)</label>
+              <input type="text" class="form-control" id="altura" placeholder="173">
+              <div class="invalid-feedback">Este campo es obligatorio</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="anio" class="form-label">Año de Nacimiento</label>
+              <input type="text" class="form-control" id="anio" placeholder="1986">
+              <div class="invalid-feedback">Este campo es obligatorio</div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12 col-md-3 my-1 d-flex justify-content-center">
+                <button class="btn btn-primary" type="submit"> Registrar </button>
+              </div>
+
+              <div class="col-sm-12 col-md-3 my-1 d-flex justify-content-center disabled">
+                <input id="genera" class="btn btn-primary disabled" type="button" value="Generacion">
+              </div>
+
+              <div class="col-sm-12 col-md-3 my-1 d-flex justify-content-center disabled">
+                <input id="mayor" class="btn btn-primary disabled" type="button" value="mayorEdad">
+              </div>
+
+              <div class="col-sm-12 col-md-3 my-1 d-flex justify-content-center">
+                <input id="mostrar"class="btn btn-primary disabled" type="button" value="mostrarDatos">
+              </div>
+            </div>
+            </div>
+
+            <div class="alert alert-danger mt-4 d-none" role="alert"
+            id="msjAlerta">
+           Los datos ingresados no son correctos!
+          </div>
+
+          <div id="listaTotal">
+          
+          </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="bg-foot text-light bg-dark py-5 px-5">
+    <section class="container">
+      <div class="cont">
+        <h3 class="me-5"> Registro de personas </h3>
+        <a href="https:/facebook.com" target="_blank" class="me-2"><i
+            class="fab fa-facebook-square fa-2x text-dark"></i></a>
+        <a href="https:/instagram.com" target="_blank" class="me-2"><i
+            class="fab fa-instagram-square fa-2x text-dark"></i></i></a>
+        <a href="https:/twitter.com" target="_blank" class="me-2"><i
+            class="fab fa-twitter-square fa-2x text-dark"></i></i></i></a>
+      </div>
+      <article class="row justify-content-center">
+        <div class="col-sm-12 col-md-6">
+          <h5 class="text-left text-foot"> Navegación </h5>
+          <div>
+            <a class="text-left text-foot" href="">Inicio</a>
+          </div>
+          <div>
+            <a class="text-left text-foot" href="registrar.html">Registrar</a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <h5 class="text-left text-foot"> Adicional </h5>
+          <div>
+            <a class="text-left text-foot" href="">Nuevos</a>
+          </div>
+          <div>
+            <a class="text-left text-foot" href="">Lista de personas</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+  </footer>
+  <script src="../js/bootstrap.min.js"></script>
+  <script type="module" src="../js/admin.js"></script>
+
+</body>
+
+</html>

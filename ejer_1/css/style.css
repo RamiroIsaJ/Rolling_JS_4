@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbritron:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@700&display=swap');
+
+
+.fecha{
+    font-family: 'Orbritron', sans-serif;
+    font-size: 2rem;
+    color: white;
+}
+
+.title{
+    font-family: 'Scheherazade New', serif;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
+
+.hora{
+    font-family: 'Londrina Outline', cursive;
+    font-size: 2rem;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.azul{
+    text-shadow: 0 0 5px #7bacff,
+    0 0 10px #7bacff, 
+    0 0 20px #7bacff,
+    0 0 40px #7bacff,
+    0 0 80px #7bacff,
+    0 0 90px #7bacff,
+    0 0 100px #7bacff;
+}
+
+.rosa{
+    text-shadow: 0 0 5px #ff7bcc,
+    0 0 10px #ff7bcc, 
+    0 0 20px #ff7bcc,
+    0 0 40px #ff7bcc,
+    0 0 80px #ff7bcc,
+    0 0 90px #ff7bcc,
+    0 0 100px #ff7bcc;
+}
+
+.verde{
+    text-shadow: 0 0 5px #7bff98,
+    0 0 10px #7bff98, 
+    0 0 20px #7bff98,
+    0 0 40px #7bff98,
+    0 0 80px #7bff98,
+    0 0 90px #7bff98,
+    0 0 100px #7bff98;
+}
+
+.azul_{
+    background-color: #7bacff;
+}
+
+.rosa_{
+    background-color: #ff7bcc;
+}
+
+.verde_{
+    background-color: #7bff98;
+}

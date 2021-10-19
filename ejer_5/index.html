@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="RAFIJ">
+    <meta name="description" content="Ejercicios DOM / BOM JS">
+    <meta name="keywords" content="objetos, clases, DOM, BOM, javascript">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>BOM - Temporizador</title>
+</head>
+<body class="bg-primary">
+    <main class="container my-5 text-center">
+        <h1 class="my-5 title"> Temporizador con ingreso de datos</h1>
+        <section id="contenedorP">
+            <div>
+                <label for="minutos"> Minutos: *</label>
+                <input type="text" class="mx-3" id="minutos" placeholder="00" required> 
+                <label for="minutos"> Segundos: *</label>
+                <input type="text" id="segundos" placeholder="00" required> 
+            </div>
+            <p id="temp" class="my-5 crono">Tiempo</p>  
+            <ol id="results" class="my-5 pasos"></ol>  
+        </section>
+        <section class="my-5">
+            <button class="btn btn-light" onclick="cronometro.start();">Iniciar</button>
+            <button class="btn btn-success" onclick="cronometro.lap();">Pasos</button>
+            <button class="btn btn-warning" onclick="cronometro.stop();">Pausar</button>
+            <button class="btn btn-danger" onclick="cronometro.resetTotal();">Resetear</button>
+        </section>
+
+    </main>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/tempo.js"></script>
+    
+</body>
+</html>

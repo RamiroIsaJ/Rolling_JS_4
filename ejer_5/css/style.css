@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@700&display=swap');
+
+.crono{
+    font-family: 'Scheherazade New', serif;
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    border: 1px black solid;
+}
+
+.title{
+    font-family: 'Scheherazade New', serif;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
+
+.pasos{
+    font-family: 'Scheherazade New', serif;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+
+

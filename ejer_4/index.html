@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="RAFIJ">
+    <meta name="description" content="Ejercicios DOM / BOM JS">
+    <meta name="keywords" content="objetos, clases, DOM, BOM, javascript">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>BOM - Cronómetro</title>
+</head>
+<body class="bg-primary">
+    <main class="container my-5 text-center">
+        <h1 class="my-4 title"> Cronómetro</h1>
+        <section id="contenedorP">
+            <p id="temp" class="my-5 crono">Tiempo</p>  
+            <ol id="results" class="my-5 pasos"></ol>  
+        </section>
+        <section class="my-5">
+            <button class="btn btn-light" onclick="cronometro.start();">Iniciar</button>
+            <button class="btn btn-success" onclick="cronometro.lap();">Pasos</button>
+            <button class="btn btn-warning" onclick="cronometro.stop();">Pausar</button>
+            <button class="btn btn-danger" onclick="cronometro.resetTotal();">Resetear</button>
+        </section>
+
+    </main>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/tempo.js"></script>
+    
+</body>
+</html>
